@@ -17,6 +17,7 @@ The two functions above already exist as a standalone JS snippet, though.
 * Integrate TeamRankFixer (if team course is still broken)
 * Enhance ShopHelper to scout for the player's current item count, and set the purchasable amount accordingly.
   * (A player cannot have more than 99 tickets of a sort; this enhancement will prevent the user from buying more than this max amount)
+* Add locale system: EN and KR is planned as of now
 * (TBA)
 
 ## How do I use this?

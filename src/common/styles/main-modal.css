@@ -1,0 +1,79 @@
+div.util-penguin.main-modal {
+    position: fixed;
+    z-index: 100;
+    /*
+    width: 0px;
+    height: 0px;
+    */
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    
+    width: 544px;
+    height: 85vh;
+    border-radius: 25px;
+    padding: 25px;
+    
+    background-color: rgba(31, 30, 51, 0.97);
+
+    overflow: hidden;
+}
+
+.spawn {
+    animation-name: spawn;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.7,0,0.3,1);
+}
+
+.despawn {
+    animation-name: despawn;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.7,0,0.3,1);
+}
+
+@keyframes spawn {
+    from {
+        width: 0;
+        height: 0;
+        border-radius: 0;
+        padding: 0;
+    }
+
+    50% {
+        width: 544px;
+        height: 10px;
+        border-radius: 25px;
+        padding: 25px;
+    }
+
+    to {
+        width: 544px;
+        height: 85vh;
+        border-radius: 25px;
+        padding: 25px;
+    }
+}
+
+@keyframes despawn {
+
+    from {
+        width: 544px;
+        height: 85vh;
+        border-radius: 25px;
+        padding: 25px;
+    }
+
+    50% {
+        width: 544px;
+        height: 10px;
+        border-radius: 25px;
+        padding: 25px;
+    }
+
+    to {
+        width: 0;
+        height: 0;
+        border-radius: 0;
+        padding: 0;
+    }
+}
